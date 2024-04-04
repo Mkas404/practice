@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp5Ларионова1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5Ларионова1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"  Background="LightBlue">
+    <Grid>
+ <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="LoginBox" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="260"></TextBox>
+        <TextBox x:Name="PasswordBox" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Height="50" VerticalAlignment="Bottom" Width="260"></TextBox>
+        <TextBlock x:Name="result_text" Grid.Row="1" Grid.Column="1" Height="50"/>
+
+        <Button x:Name ="switch" Content="Войти" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="200" Click="switch_Click"></Button>
+        <Button x:Name ="login" Content="Зарегистрироваться" Grid.Column="2" HorizontalAlignment="Center" Height="50" Width="200" Click="login_click"/>
+
+        <TextBlock Text="Нет аккаунта? Зарегистрируйся!" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="50" FontSize="18" Foreground="DarkRed"/>
+
+        <Image Source="C:\Users\student\Desktop\WpfApp3\WpfApp3\1\/lock.png" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Row="1" Height="50"></Image>
+        <Image Source="C:\Users\student\Desktop\WpfApp3\WpfApp3\1\/user.png" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="1" Height="50"></Image>
+    </Grid>
+</Window>
